@@ -1,5 +1,6 @@
 # Database-group-assignment
-This hands-on project provides valuable experience in efficiently structuring databases to handle large, complex data. Team members: Mandla Jiane, Thembelani Bukali & Cherozade Bhayat
+This hands-on project provides valuable experience in efficiently structuring databases to handle large, complex data. 
+Team members/Collaborators: Mandla Jiane, Thembelani Bukali & Cherozade Bhayat
 
 # Bookstore Database Schema
 
@@ -49,7 +50,7 @@ Stores country information for addresses.
 
 ### 2. Address
 Stores address details.
-- address_i (PK): Unique identifier for addresses
+- address_id (PK): Unique identifier for addresses
 - street: Street address
 - city: City name
 - postal_code: Postal/zip code
@@ -190,7 +191,8 @@ JOIN order_status os ON oh.status_id = os.status_id
 WHERE c.customer_id = 1
 ORDER BY oh.status_date DESC;
 
-*******************************************************************************************************************************
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 __Security Practices in Team Collaboration__
 During our collaboration on this database schema project, our team of three implemented several security best practices:
 *Communication Channels*
@@ -219,24 +221,24 @@ SQL Injection Prevention: Wrote queries with parameterization in mind to prevent
 
 This approach allowed us to collaborate effectively while maintaining appropriate security standards for an academic database project.
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-*Security Measures*
+### Schema Security Measures
 To ensure secure and controlled access to the database, the following security practices were implemented:
 
-__Role-Based Access Control (RBAC):__
+_Role-Based Access Control (RBAC):_
 
 Defined roles such as book_manager and history_manager with specific table-level privileges.
 
 Assigned roles to corresponding admin users (book_admin, history_admin) to enforce the principle of least privilege.
 
-__Table-Specific Privileges:__
+_Table-Specific Privileges:_
 
 Limited user access to specific tables (book and order_history) instead of granting full database access.
 
 Granted only essential privileges (e.g., SELECT, INSERT, UPDATE, DELETE) per role.
 
-__User Management:__
+_User Management:_
 
 Created individual users with secure passwords.
 
@@ -244,7 +246,7 @@ Used the localhost host restriction to limit access to local connections (can be
 
 Set default roles for users to streamline permission management.
 
-__Privilege Flushing:__
+_Privilege Flushing:_
 
 Used FLUSH PRIVILEGES to ensure all changes were applied immediately.
 
