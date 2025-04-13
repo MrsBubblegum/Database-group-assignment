@@ -36,8 +36,7 @@ The database consists of 15 tables that model the relationships between various 
 
 ## Entity Relationship Diagram
 
-![Bookstore Database Entity Relationship Diagram] 
-./images/bookstore_erd.png
+![Bookstore Database Entity Relationship Diagram](images/bookstore_erd.png)
 
 __Note: The above ERD shows all tables and their relationships in the bookstore database system.__
 
