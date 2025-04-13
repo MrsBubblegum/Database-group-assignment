@@ -156,10 +156,6 @@ Tracks status changes for orders.
 
 5. **Data Integrity**: Foreign key constraints ensure referential integrity across the database.
 
-## Known Issues
-
-- The *customer_address* reference in the *cust_order* table should be adjusted to reference the composite key of *customer_address* or be changed to directly reference an *address_id*.
-
 ## Usage Examples
 
 ### Sample Queries
